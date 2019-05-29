@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <title>后勤校园</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div style="height: 43px;width: 100%;"></div>
+    <header class="header">
+        <a href="" class="logo"><img src="images/logo.png"></a>
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+	<div class="nav-list">
+		<div class="nav-body">
+			<!-- <div class="head">
+				<a href="#" class="logo"><img src="images/logo.png"></a>
+			</div> -->
+			<div class="xian"></div>
+		   <ul class="nav-ul">
+				<li><a href="#">首页</a></li>
+				<li>
+					<a href="#" class="shang">产品中心</a>
+					<ul class="hidde">
+						<li><a href="#">骑手</a></li>
+						<li><a href="#">商家</a></li>
+						<li><a href="#">加盟</a></li>
+						<li><a href="#">后勤</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">合作案例</a>
+					<ul class="hidde">
+						<li><a href="#">商家案例</a></li>
+						<li><a href="#">校园案例</a></li>
+					</ul>
+				</li>
+				<li><a href="#">小程序</a></li>
+				<li><a href="#">校园合伙人</a></li>
+				<li><a href="#">公司介绍</a></li>
+				<li>
+					<a href="#" class="shang">关于我们</a>
+					<ul class="hidde">
+						<li><a href="#">智慧食堂</a></li>
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">开放平台</a>
+					<ul class="hidde">
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+		   </ul>
+		</div>
+	</div>
+	<div class="banner"><img src="images/banner_xy.jpg"></div>
+	<div class="padding-box">
+	    <div class="title text-center">一卡通实时管理</div>
+	    <div class="txt-p text-center">
+	        <p>学生可对一卡通实时查看余额，包括水卡、电卡、饭卡、消费记录，充值记录实时更新，再也不怕掉卡，余额丢失。</p>
+	    </div>
+	    <div class="tj-img"><img src="images/hq1.png"></div>
+	</div>
+	<div class="case-back">
+	    <div class="title text-center">水、电查询缴费</div>
+		<div class="txt-p text-center">
+			<p>随着学校发展日益迅速，传统的水电管理方面一直处于未管理或者效率低的人工管理方式，任务繁重，差错频发。需要根据信息时代引入一套智能的水电费缴纳系统。</p>
+		</div>
+		<div class="hq-img"><img src="images/hq4.png"></div>
+	</div>
+	<div class="padding-box">
+	    <div class="title text-center">移动化、报修就是这么顺畅</div>
+	    <div class="txt-p text-center">
+	        <p>百狸园智能报修能够实现学生报修、审核员工处理工单、维修工接单完工等相关操作，统统手机端完成，让报修流程数字化运作。</p>
+	    </div>
+	    <div class="tj-img"><img src="images/hq2.png"></div>
+	</div>
+	<div class="case-back">
+	    <div class="title text-center">大数据管理就是这么高效</div>
+		<div class="txt-p text-center">
+			<p>百狸园智能报修系统筹了学生端、维修工端等多方数据，经大数据的分析，后台自动生成统计信息，为后勤管理层提供切实有效的规划和调整依据，包括人员绩效考核、维修满意度评价、耗材损耗等。</p>
+		</div>
+		<div class="hq-img"><img src="images/hq5.png"></div>
+	</div>
+	<div class="padding-box">
+	    <div class="title text-center">宿舍管理</div>
+	    <div class="txt-p text-center">
+	        <p>新生入学一脸茫然，迎新管理的重要性和难度不言而喻。智能分房、设置规则、自动分配、线上新生专区，解决所有入学困惑满足不同住宿需求。</p>
+	    </div>
+	    <div class="tj-img"><img src="images/hq3.png"></div>
+	</div>
+	<div class="footer">
+	    <div class="padding-box clearfix">
+	        <div class="pull-left">
+	            <div class="footer-t">联系我们</div>
+	            <div class="footer-p">
+	                <p>咨询热线：15975322465</p>
+	                <p>工作日：09:00-18:00</p>
+	            </div>
+	        </div>
+	        <div class="pull-right text-center ewm-b"><img src="images/ewm.png"><br>百狸园公众号</div>
+	    </div>
+	    <div class="footer-b text-center">Copyright © 2013 - 2018 Seiue Inc</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+       var onOff = true;
+       $('.menu-button').click(function(){
+  			$(this).toggleClass("cross");
+           if(onOff){
+              $('.nav-list').animate({width:'+=640px'});
+           }else{ $('.nav-list').animate({width:'-=640px'});
+           }
+  			onOff = !onOff;
+       });
+  	});
+  $(".shang").click(function(){
+  	  $(this).toggleClass("xia");
+  	  $(this).next().toggle(500);
+  });
+</script>
+</html>

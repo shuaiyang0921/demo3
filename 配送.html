@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <title>配送</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div style="height: 43px;width: 100%;"></div>
+    <header class="header">
+        <a href="" class="logo"><img src="images/logo.png"></a>
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+	<div class="nav-list">
+		<div class="nav-body">
+			<!-- <div class="head">
+				<a href="#" class="logo"><img src="images/logo.png"></a>
+			</div> -->
+			<div class="xian"></div>
+		   <ul class="nav-ul">
+				<li><a href="#">首页</a></li>
+				<li>
+					<a href="#" class="shang">产品中心</a>
+					<ul class="hidde">
+						<li><a href="#">骑手</a></li>
+						<li><a href="#">商家</a></li>
+						<li><a href="#">加盟</a></li>
+						<li><a href="#">后勤</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">合作案例</a>
+					<ul class="hidde">
+						<li><a href="#">商家案例</a></li>
+						<li><a href="#">校园案例</a></li>
+					</ul>
+				</li>
+				<li><a href="#">小程序</a></li>
+				<li><a href="#">校园合伙人</a></li>
+				<li><a href="#">公司介绍</a></li>
+				<li>
+					<a href="#" class="shang">关于我们</a>
+					<ul class="hidde">
+						<li><a href="#">智慧食堂</a></li>
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">开放平台</a>
+					<ul class="hidde">
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+		   </ul>
+		</div>
+	</div>
+    <div class="banner"><img src="images/banner.jpg"></div>
+	<div class="padding-box">
+	    <div class="title text-center">订单统一管理</div>
+	    <div class="txt-p text-center">
+	        <p>配送员可以通过配送大厅进行抢单，抢到的配送单可以通过订单管理列表中进行通过管理、查看等操作，掌握自己一手配送信息。</p>
+	    </div>
+	    <div class="tj-img"><img src="images/peis1.png"></div>
+	</div>
+	<div class="case-back">
+	    <div class="title text-center">配送实时提醒</div>
+		<div class="txt-p text-center">
+			<p>在骑车的过程中回复信息、抢单都是非常危险的。百狸园配送系统为配送员订单提醒，让用户实时了解订单状况。</p>
+		</div>
+		<div class="hq-img"><img src="images/peis2.png"></div>
+	</div>
+	<div class="padding-box">
+	    <div class="title text-center">账单详细管理</div>
+	    <div class="txt-p text-center">
+	        <p>配送员可在个人中心及账单管理中，查看每日配送单量及金额，每月金额，及提现记录。</p>
+	    </div>
+	    <div class="tj-img"><img src="images/peis3.png"></div>
+	</div>
+	<div class="footer">
+	    <div class="padding-box clearfix">
+	        <div class="pull-left">
+	            <div class="footer-t">联系我们</div>
+	            <div class="footer-p">
+	                <p>咨询热线：15975322465</p>
+	                <p>工作日：09:00-18:00</p>
+	            </div>
+	        </div>
+	        <div class="pull-right text-center ewm-b"><img src="images/ewm.png"><br>百狸园公众号</div>
+	    </div>
+	    <div class="footer-b text-center">Copyright © 2013 - 2018 Seiue Inc</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  // $(".menu-button").click(function(){
+		//   $(this).toggleClass("cross");
+		//   if($(".nav-list").is(":hidden"))
+		//   {
+		// 	$(".nav-list").slideDown("slow");  
+		//   }else{
+		// 	$(".nav-list").slideUp("slow");
+		// 	  }
+  // }); 
+  $(".shang").click(function(){
+  	  $(this).toggleClass("xia");
+  	  $(this).next().toggle(500);
+  });
+</script>
+</html>
+

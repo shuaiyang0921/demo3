@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <title>index</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div style="height: 43px;width: 100%;"></div>
+    <header class="header">
+        <a href="" class="logo"><img src="images/logo.png"></a>
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+	<div class="nav-list">
+		<div class="nav-body">
+			<!-- <div class="head">
+				<a href="#" class="logo"><img src="images/logo.png"></a>
+			</div> -->
+			<div class="xian"></div>
+		   <ul class="nav-ul">
+				<li><a href="#">首页</a></li>
+				<li>
+					<a href="#" class="shang">产品中心</a>
+					<ul class="hidde">
+						<li><a href="#">骑手</a></li>
+						<li><a href="#">商家</a></li>
+						<li><a href="#">加盟</a></li>
+						<li><a href="#">后勤</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">合作案例</a>
+					<ul class="hidde">
+						<li><a href="#">商家案例</a></li>
+						<li><a href="#">校园案例</a></li>
+					</ul>
+				</li>
+				<li><a href="#">小程序</a></li>
+				<li><a href="#">校园合伙人</a></li>
+				<li><a href="#">公司介绍</a></li>
+				<li>
+					<a href="#" class="shang">关于我们</a>
+					<ul class="hidde">
+						<li><a href="#">智慧食堂</a></li>
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">开放平台</a>
+					<ul class="hidde">
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+		   </ul>
+		</div>
+	</div>
+	<div class="jm-lx">
+		<span href="#" >我是校方代表</span>
+		<span href="#" class="na">我是商家</span>
+	</div>
+	<div class="form">
+		<form action="" method="">
+			<label><input type="text" id="" value="" placeholder="联系人" /></label>
+			<label><input type="text" id="" value="" placeholder="手机号码"/></label>
+			<label><input type="text" id="" value="" placeholder="联系邮箱"/></label>
+			<textarea rows="5" placeholder="请填写您的具体需求,我们会尽快回复您."></textarea>
+			<input type="submit" id="" name="" value="提交"/>
+		</form>
+	</div>
+	<footer class="foot">如您的需求较为复杂，或包含附件，请发送邮件至41313289@qq.com</footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+       var onOff = true;
+       $('.menu-button').click(function(){
+  			$(this).toggleClass("cross");
+           if(onOff){
+              $('.nav-list').animate({width:'+=640px'});
+           }else{ $('.nav-list').animate({width:'-=640px'});
+           }
+  			onOff = !onOff;
+       });
+  	});
+  $(".shang").click(function(){
+	  $(this).toggleClass("xia");
+	  $(this).next().toggle(500);
+  });
+	$(".jm-lx span").click(function ()
+	　　{
+	　　　　$(this).addClass("na").siblings().removeClass("na");
+	　　});
+</script>
+</html>

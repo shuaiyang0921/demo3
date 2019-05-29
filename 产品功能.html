@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <title>index</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div style="height: 43px;width: 100%;"></div>
+    <header class="header">
+        <a href="" class="logo"><img src="images/logo.png"></a>
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+	<div class="nav-list">
+		<div class="nav-body">
+			<!-- <div class="head">
+				<a href="#" class="logo"><img src="images/logo.png"></a>
+			</div> -->
+			<div class="xian"></div>
+		   <ul class="nav-ul">
+				<li><a href="#">首页</a></li>
+				<li>
+					<a href="#" class="shang">产品中心</a>
+					<ul class="hidde">
+						<li><a href="#">骑手</a></li>
+						<li><a href="#">商家</a></li>
+						<li><a href="#">加盟</a></li>
+						<li><a href="#">后勤</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">合作案例</a>
+					<ul class="hidde">
+						<li><a href="#">商家案例</a></li>
+						<li><a href="#">校园案例</a></li>
+					</ul>
+				</li>
+				<li><a href="#">小程序</a></li>
+				<li><a href="#">校园合伙人</a></li>
+				<li><a href="#">公司介绍</a></li>
+				<li>
+					<a href="#" class="shang">关于我们</a>
+					<ul class="hidde">
+						<li><a href="#">智慧食堂</a></li>
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">开放平台</a>
+					<ul class="hidde">
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+		   </ul>
+		</div>
+	</div>
+    <div class="banner"><img src="images/banner-gn.jpg"></div>
+    <div class="gn-box clearfix">
+        <ul class="gn-nav pull-left">
+            <li><a href="">新生入驻</a></li>
+            <li class="active"><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+            <li><a href="">新生入驻</a></li>
+        </ul>
+        <div class="gn-right">
+            <div class="icon-gn text-center"><img src="images/icon-gn.png"></div>
+            <div class="gn-tt text-center">新生入住</div>
+            <div class="gn-tt-sm text-center">使用对象：学生</div>
+            <div class="gn-p text-center">能解决什么能解决什能解决什么能解决什能解决什么能解决什能解决什么能解决什能解决什么能解决什</div>
+            <div class="gn-tt gn-tt-b text-center">新生入住</div>
+            <div class="row">
+                <div class="col-xs-6 gn-img"><img src="images/gn01.png"><br>功能图片</div>
+                <div class="col-xs-6">
+                    <div class="gn-back">
+                        <div class="gn-back-tt">能解决什么能</div>
+                        <div class="gn-back-p">能解决什么能解决什能解决什么能解决什</div>
+                    </div>
+                    <div class="gn-back">
+                        <div class="gn-back-tt">能解决什么能</div>
+                        <div class="gn-back-p">能解决什么能解决什能解决什么能解决什</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="footer">
+	    <div class="padding-box clearfix">
+	        <div class="pull-left">
+	            <div class="footer-t">联系我们</div>
+	            <div class="footer-p">
+	                <p>咨询热线：15975322465</p>
+	                <p>工作日：09:00-18:00</p>
+	            </div>
+	        </div>
+	        <div class="pull-right text-center ewm-b"><img src="images/ewm.png"><br>百狸园公众号</div>
+	    </div>
+	    <div class="footer-b text-center">Copyright © 2013 - 2018 Seiue Inc</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+ $(document).ready(function(){
+      var onOff = true;
+      $('.menu-button').click(function(){
+ 			$(this).toggleClass("cross");
+          if(onOff){
+             $('.nav-list').animate({width:'+=640px'});
+          }else{ $('.nav-list').animate({width:'-=640px'});
+          }
+ 			onOff = !onOff;
+      });
+ 	});
+  $(".shang").click(function(){
+  	  $(this).toggleClass("xia");
+  	  $(this).next().toggle(500);
+  });
+</script>
+</html>

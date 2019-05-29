@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <title>index</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div style="height: 43px;width: 100%;"></div>
+    <header class="header">
+        <a href="" class="logo"><img src="images/logo.png"></a>
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+	<div class="nav-list">
+		<div class="nav-body">
+			<!-- <div class="head">
+				<a href="#" class="logo"><img src="images/logo.png"></a>
+			</div> -->
+			<div class="xian"></div>
+		   <ul class="nav-ul">
+				<li><a href="#">首页</a></li>
+				<li>
+					<a href="#" class="shang">产品中心</a>
+					<ul class="hidde">
+						<li><a href="#">骑手</a></li>
+						<li><a href="#">商家</a></li>
+						<li><a href="#">加盟</a></li>
+						<li><a href="#">后勤</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">合作案例</a>
+					<ul class="hidde">
+						<li><a href="#">商家案例</a></li>
+						<li><a href="#">校园案例</a></li>
+					</ul>
+				</li>
+				<li><a href="#">小程序</a></li>
+				<li><a href="#">校园合伙人</a></li>
+				<li><a href="#">公司介绍</a></li>
+				<li>
+					<a href="#" class="shang">关于我们</a>
+					<ul class="hidde">
+						<li><a href="#">智慧食堂</a></li>
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="shang">开放平台</a>
+					<ul class="hidde">
+						<li><a href="#">楼宇企业</a></li>
+					</ul>
+				</li>
+		   </ul>
+		</div>
+	</div>
+    <div class="banner"><img src="images/about-banner.jpg"></div>
+    <div class="padding-box about-box">
+        <div class="gn-tt text-center">关于我们</div>
+        <div class="about-tt-sm text-center">正在改变数字化校园生活服务的科技公司。</div>
+        <div class="about-p">
+            <p>百狸园发展至今，用特有的低成本和特有的运营方式，将原本只运营在一栋宿舍维修的后勤服务扩展到两间高校，目前服务数千名高校学生。</p>
+            <p>数字化校园生活服务综合平台，将授权本校创业学生团队自主运营。我们致力于帮助升级数字化校园及改善学生在校生活品质及生态环境而奋斗！</p>
+            <p>在百狸园，我们既着眼于现实，用产品和服务帮助每所学校实践不同的改革方案；也放眼于未来，通过数据挖掘和人工智能为师生们带来真正更深远的价值。</p>
+        </div>
+        <div class="gn-tt text-center">我们的使命</div>
+        <div class="about-tt-sm about-tt-sm-b text-center">让校园生活更轻松</div>
+        <div class="gn-tt text-center">我们的愿景</div>
+        <div class="about-p">
+            <p>影响未来大学生和青年人生活方式的综合性校园数字化移动互联服
+务平台。创造有温度有情怀有无限想象空间和生态链思维的创业平
+台。</p>
+        </div>
+    </div>
+    <div><img src="images/about01.jpg"></div>
+    <div class="padding-box about-box">
+        <div class="gn-tt text-center">联系我们</div>
+        <div class="contact-p text-center">
+            <p><img src="images/contact01.png">广州市广东外语外贸大学（公开学院）乐雅园2楼</p>
+            <p><img src="images/contact02.png">41313289@qq.com</p>
+            <p><img src="images/contact03.png">13808898034</p>
+        </div>
+    </div>
+    <div><img src="images/map.png"></div>
+	<div class="footer">
+	    <div class="padding-box clearfix">
+	        <div class="pull-left">
+	            <div class="footer-t">联系我们</div>
+	            <div class="footer-p">
+	                <p>咨询热线：15975322465</p>
+	                <p>工作日：09:00-18:00</p>
+	            </div>
+	        </div>
+	        <div class="pull-right text-center ewm-b"><img src="images/ewm.png"><br>百狸园公众号</div>
+	    </div>
+	    <div class="footer-b text-center">Copyright © 2013 - 2018 Seiue Inc</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+       var onOff = true;
+       $('.menu-button').click(function(){
+  			$(this).toggleClass("cross");
+           if(onOff){
+              $('.nav-list').animate({width:'+=640px'});
+           }else{ $('.nav-list').animate({width:'-=640px'});
+           }
+  			onOff = !onOff;
+       });
+  	});
+  $(".shang").click(function(){
+  	  $(this).toggleClass("xia");
+  	  $(this).next().toggle(500);
+  });
+</script>
+</html>
